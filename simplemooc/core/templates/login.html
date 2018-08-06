@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/pure-min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <title>Simple MOOC</title>
+</head>
+<body>
+<br/><br/>
+
+<div class="login-title">
+{#    <img src="http://andreximenes.com/static/img/vdl-340x400.png" alt="logo" />#}
+</div>
+
+
+<div class="stand">
+  <div class="outer-screen">
+    <div class="inner-screen">
+      <div class="form">
+        <input type="text" class="zocial-dribbble" placeholder="Digite seu e-mail" />
+        <input type="text" placeholder="Password" />
+         <input type="submit" value="Login" />
+        <a href="">Esqueceu a senha?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="{% static 'js/ui.js' %}"></script>
+</body>
+</html>
