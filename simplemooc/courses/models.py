@@ -18,7 +18,8 @@ class Course(models.Model):
 
     name = models.CharField(verbose_name='Nome', max_length=100)
     slug = models.SlugField(verbose_name='Atalho')
-    description = models.TextField(verbose_name='Descrição', blank=True)
+    description = models.TextField(verbose_name='Descrição Simples', blank=True)
+    about = models.TextField('Sobre o Curso')
     start_date = models.DateField(verbose_name='Data de Início', null=True, blank=True)
     create_at = models.DateField(verbose_name='Criado em', auto_now_add=True)
     update_at = models.DateField(verbose_name='Atualizado em', auto_now=True)
